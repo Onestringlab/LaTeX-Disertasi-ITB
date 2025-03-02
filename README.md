@@ -12,5 +12,7 @@ Gunakan kombinasi untuk mengatur jarak pada paragraf:
 - \restoreparskip
 - \vspace{1em}
 
+Contoh penggunaan dapat dilihat pada file abstract.tex dan abstrak.tex
+
 ## Kontributor Pengembang
 - Rajo Intan
