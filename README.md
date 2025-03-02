@@ -4,11 +4,11 @@ Ini merupakan pengembangan dari template https://github.com/ridlo/Proposal_Diser
 
 Contoh hasil: https://github.com/Onestringlab/LaTeX-Disertasi-ITB/blob/main/output/proposal.pdf
 
-Kontributor Pengembang
-- Rajo Intan
-
 ## Tips
-Gunakan kombinasi:
+Gunakan kombinasi untuk mengatur jarak pada paragraf:
 - \resetparskip
 - \restoreparskip
 - \vspace{1em}
+
+## Kontributor Pengembang
+- Rajo Intan
