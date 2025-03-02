@@ -1,4 +1,6 @@
-## INFORMASI : INI BUKAN TEMPLATE RESMI
+*INFORMASI : INI BUKAN TEMPLATE RESMI*
+
+# Template LaTeX Disertasi ITB
 
 Ini merupakan pengembangan dari template https://github.com/ridlo/Proposal_Disertasi_ITB
 
