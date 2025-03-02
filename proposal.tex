@@ -8,29 +8,33 @@
 \input{cover.tex}
 
 \newpage
-\input{abstract.tex}
-\addcontentsline{toc}{chapter}{ABSTRACT}
-
-\newpage
 \input{abstrak.tex}
 \addcontentsline{toc}{chapter}{ABSTRAK}
 
 \newpage
+\input{abstract.tex}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+\newpage
 \input{validation.tex}
-\addcontentsline{toc}{chapter}{VALIDATION SHEET}
+\addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
 
 \newpage
 \input{preface.tex}
-\addcontentsline{toc}{chapter}{PREFACE}
+\addcontentsline{toc}{chapter}{KATA PENGANTAR}
 
 \tableofcontents
-\addcontentsline{toc}{chapter}{CONTENTS}
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
 
 \listoffigures
-\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
 
 \listoftables
-\addcontentsline{toc}{chapter}{LIST OF TABLES}
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+
+\newpage
+\input{list_of_symbol.tex}
+\addcontentsline{toc}{chapter}{DAFTAR SIMBOL DAN LAMBANG}
 
 % mulai penomeran arabic
 \pagestyle{plain}
@@ -41,8 +45,9 @@
 \input{Chap4}
 \input{Chap5}
 %
+\renewcommand\bibname{DAFTAR PUSTAKA}
 \bibliography{bibtex}
-\addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
 \cleardoublepage
 %\appendix 
 %\input{biblio.tex}

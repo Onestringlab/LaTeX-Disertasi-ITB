@@ -368,7 +368,7 @@
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
                          \addcontentsline{toc}{chapter}%
-                                   {\protect\numberline{\thechapter}#1}%
+                                   {\protect\numberline{Bab \thechapter}#1}%
                        \else
                          \addcontentsline{toc}{chapter}{#1}%
                        \fi
@@ -605,7 +605,7 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\contentsname
+    \chapter*{\MakeUppercase\contentsname
         \@mkboth{%
            \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
     \@starttoc{toc}%
@@ -655,20 +655,27 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\listfigurename}%
+    \chapter*{\MakeUppercase \listfigurename}%
       \@mkboth{\MakeUppercase\listfigurename}%
               {\MakeUppercase\listfigurename}%
     \@starttoc{lof}%
     \if@restonecol\twocolumn\fi
     }
 \newcommand*\l@figure{\@dottedtocline{1}{1.5em}{2.3em}}
+\let\oldnumberline\numberline
+\renewcommand*\l@figure[2]{%
+  \begingroup
+  \renewcommand{\numberline}[1]{\oldnumberline{Gambar ##1}}%
+  \@dottedtocline{1}{1.5em}{6.5em}{#1}{#2}%
+  \endgroup
+}
 \newcommand\listoftables{%
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
       \@restonecolfalse
     \fi
-    \chapter*{\listtablename}%
+    \chapter*{\MakeUppercase \listtablename}%
       \@mkboth{%
           \MakeUppercase\listtablename}%
          {\MakeUppercase\listtablename}%
@@ -676,6 +683,12 @@
     \if@restonecol\twocolumn\fi
     }
 \let\l@table\l@figure
+\renewcommand*\l@table[2]{%
+  \begingroup
+  \renewcommand{\numberline}[1]{\oldnumberline{Tabel ##1}}
+  \@dottedtocline{1}{1.5em}{5.5em}{#1}{#2}%
+  \endgroup
+}
 \newdimen\bibindent
 \setlength\bibindent{1.5em}
 \newenvironment{thebibliography}[1]
