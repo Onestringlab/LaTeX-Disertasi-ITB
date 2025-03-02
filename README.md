@@ -6,3 +6,9 @@ Contoh hasil: https://github.com/Onestringlab/LaTeX-Disertasi-ITB/blob/main/outp
 
 Kontributor Pengembang
 - Rajo Intan
+
+## Tips
+Gunakan kombinasi:
+- \resetparskip
+- \restoreparskip
+- \vspace{1em}
