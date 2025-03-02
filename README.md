@@ -1,9 +1,7 @@
-# Proposal_Disertasi_ITB
-Contoh penulisan proposal disertasi ITB menurut pedoman penulisan dari SPS ITB.
+# INFORMASI 
+## INI BUKAN TEMPLATE RESMI
 
-Compile:
->> pdflatex + bibtex
+## Ini merupakan pengembangan dari template https://github.com/ridlo/Proposal_Disertasi_ITB
 
-### Kontributor
-- Taufiq Hidayat
-- Ridlo W. Wibowo
+## Kontributor Pengembang
+- Rajo Intan
